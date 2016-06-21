@@ -1,0 +1,53 @@
+.top-bar-container {
+  background: white;
+  .top-bar {
+    width: 90%;
+    background: white;
+    color: black;
+    display: flex;
+    margin: auto;
+    .row {
+      max-width: 62.5rem;
+    }
+    .name {
+      min-width: 100px;
+    }
+    .flex-1 {
+      flex: 1;
+    }
+    .search-box {
+      width: 100%;
+      max-width: 300px;
+      margin: auto;
+      .fa-search {
+        position: absolute;
+        right: 7px;
+        top: 14px;
+        color: lightgray;
+        font-size: 16px;
+      }
+      .search-input {
+        border: 1px lightgray solid;
+        box-shadow: none;
+        position: inherit;
+        padding-right: 20px;
+        &::-webkit-input-placeholder {
+          color: lightgray;
+          font-size: 12px;
+        }
+        &:-moz-placeholder {
+          color: lightgray;
+          font-size: 12px;
+        }
+        &::-moz-placeholder {
+          color: lightgray;
+          font-size: 12px;
+        }
+        &:-ms-input-placeholder {
+          color: lightgray;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

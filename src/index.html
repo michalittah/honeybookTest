@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="contact-list">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/ico" href="assets/images/foundation-fav-icon.ico"/>
+  <title>Contact List</title>
+
+  <!-- compiled CSS -->
+  <% styles.forEach( function ( file ) { %>
+  <link rel="stylesheet" type="text/css" href="<%= file %>"/>
+  <% }); %>
+
+</head>
+<body  ng-controller="ContactsCtrl">
+
+<!-- For small/medium/large screens, show the topbar and main content area -->
+<div ui-view></div>
+
+<!-- compiled JavaScript -->
+<% scripts.forEach( function ( file ) { %>
+<script type="text/javascript" src="<%= file %>"></script>
+<% }); %>
+
+</body>
+</html>
